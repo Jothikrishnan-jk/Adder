@@ -57,7 +57,8 @@ module exp3b(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
 wire x,p,q,r;
-xor(sum,x);
+xor(x,b,c);
+xor(sum,x,a);
 and(p,a,b);
 and(q,b,c);
 and(r,a,c);
@@ -67,14 +68,15 @@ endmodule
 ## RTL Schematic:
 <img width="554" alt="half adder" src="https://github.com/Jothikrishnan-jk/Adder/assets/129312867/ebbdd383-4569-4593-a518-62a6290ecfcd">
 
-![image](https://github.com/Jothikrishnan-jk/Adder/assets/129312867/85dc48e9-0b4c-4fc3-8ec8-d3b95cf0d2e2)
+![image](https://github.com/Jothikrishnan-jk/Adder/assets/129312867/8287633f-e4bc-4d7d-b1a2-31d40ee27a94)
+
 
 
 
 ## Timing Diagram:
 <img width="960" alt="halfa adder timing" src="https://github.com/Jothikrishnan-jk/Adder/assets/129312867/18f6fddc-409d-40bb-9107-c2527662555f">
 
-![image](https://github.com/Jothikrishnan-jk/Adder/assets/129312867/d4dc1d04-fadc-42b6-98c8-cd62e3fdca03)
+![image](https://github.com/Jothikrishnan-jk/Adder/assets/129312867/240ab880-aed7-4092-956b-45ca91890c00)
 
 
 ## Result:
